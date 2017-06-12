@@ -1,0 +1,165 @@
+BODY {
+	background-color: #505050;
+}
+
+#header {
+	background-color: #909090;
+	border-radius: 10px;
+	border: 2px solid #505050;
+	padding: 15px;
+	margin: auto;
+	width: 1400px;
+	height: 110px;
+	box-shadow: 10px 10px 15px;;
+}
+
+#title {
+	width: 450px;
+}
+
+#header-right {
+	float: right;
+	margin: auto;
+	margin-right: -25px;
+}
+
+#buttons {
+	display: inline-grid;
+	margin-right: 20px;
+}
+
+#reload {
+	width: 20px;
+	margin-top: -150px;
+}
+
+#close {
+	width: 20px;
+	margin-bottom: 30px;
+}
+
+#bloc_page {
+	display: flex;
+	width: 100%;
+}
+
+#navbar-left {
+	background-color: #909090;
+	margin: auto;
+	margin-right: 25px;
+	margin-top: 10px;
+	border-radius: 10px;
+	border: 2px solid #505050;
+	padding: 5px;
+	width: 120px;
+	height: 420px;
+	box-shadow: 10px 10px 15px;;
+}
+
+#navbar-left img {
+	width: 70px;
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+}
+
+#oeil {
+	border: 5px solid red;
+	border-radius: 10px;
+}
+
+#center-page {
+	background-color: #909090;
+	margin-top: 10px;
+	border-radius: 10px;
+	border: 2px solid #505050;
+	padding: 10px;
+	box-shadow: 10px 10px 15px;;
+}
+
+#apple {
+	position: fixed;
+	padding: 70px 100px;
+	margin-top: -250px;
+	margin-left: 800px;
+}
+
+#ikea {
+	position: fixed;
+	padding: 100px 70px;
+	margin-top: -250px;
+	margin-left: 320px;
+}
+
+#navbar-right {
+	background-color: #909090;
+	margin: auto;
+	margin-left: 25px;
+	margin-top: 10px;
+	border-radius: 10px;
+	border: 2px solid #505050;
+	padding: 5px;
+	width: 120px;
+	height: 420px;
+	box-shadow: 10px 10px 15px;;
+}
+
+#navbar-right .image {
+	width: 70px;
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.repeatbrick {
+	display: flex;
+	justify-content: center;
+}
+
+.repeatbrick IMG {
+	width: 28px;
+}
+
+#popup {
+	position: absolute;
+	background-color: #7aff76;
+	border: 2px solid #505050;
+	border-radius: 10px;
+	box-shadow: 10px 10px 15px;;
+	width: 500px;
+	height: 170px;
+	margin-left: 200px;
+	margin-top: -80px;
+}
+
+p {
+
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+span:nth-child(1) {
+	font-size: 35px;
+}
+
+#popup #ordi {
+	text-shadow: 5px 5px 5px red;
+}
+
+#submit {
+	display: flex;
+	margin-left: 15px;
+	margin-top: -15px;
+}
+
+input[type="text"] {
+	width: 350px;
+	border-color: #e2e2e2;
+	margin-right: 10px;
+}
+
+input[type="button"] {
+	border-width: 1px;
+	background-color: gainsboro;
+}
