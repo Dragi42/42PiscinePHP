@@ -24,19 +24,17 @@ $reset = 0;
 
 while ($i <= $last && $reset <= 2)
 {
-	if ($i <= $last && $reset == 0 && ($tab[$i][0] >= 'a' && $tab[$i][0] <= 'z' ||
-			$tab[$i][0] >= 'A' && $tab[$i][0] <= 'Z'))
+	if ($i <= $last && $reset == 0 && ctype_alpha($tab[$i][0]))
 		echo($tab[$i]."\n");
-	else if ($i <= $last && $reset == 1 && ($tab[$i][0] >= "0" && $tab[$i][0] <= "9"))
+	if ($i <= $last && $reset == 1 && ctype_digit($tab[$i][0]))
 		echo($tab[$i]."\n");
-	else if ($reset == 2 && $i <= $last && ((ord($tab[$i]) < 48 && ord($tab[$i]) >= 0) || (ord($tab[$i]) > 57 &&
-		ord($tab[$i]) < 65) || (ord($tab[$i]) > 90 && ord($tab[$i]) < 97) || (ord($tab[$i]) > 122 && ord($tab[$i]) <= 127)))
+	if ($i <= $last && $reset == 2 && !ctype_digit($tab[$i][0]) &&
+			!ctype_alpha($tab[$i][0]) && ctype_print($tab[$i][0]))
 		echo($tab[$i]."\n");
 	else if ($reset < 2 && $i == $last)
 	{
 		$reset++;
-		if ($reset == 1)
-			sort($tab, SORT_STRING);
+		sort($tab, SORT_STRING);
 		$i = 0;
 	}
 	$i++;
