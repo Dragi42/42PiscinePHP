@@ -18,6 +18,7 @@ else {
 		echo($nb1 / $nb2);
 	else if ($op == '%')
 		echo($nb1 % $nb2);
+	echo "\n";
 }
 
 ?>
